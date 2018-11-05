@@ -28,6 +28,7 @@ footer{
     background-color: blue;
     text-align: center
 }
+
 /*640px以下*/
 @media screen and (min-width:641px){
     aside{
@@ -35,6 +36,32 @@ footer{
         float: left;
     }
     #side::after{
+        /*clearfix*/
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+/*1028px以上*/
+@media screen and (min-width:1025px){
+    #main{
+        max-width: 1024px;
+        margin: auto;
+    }
+    section{
+        width: calc(70% - 20px);
+        float: left;
+    }
+    #side{
+        width: calc(1024px - 718px);
+        float: left;
+    }
+    aside{
+        width: calc(100% - 20px);
+    }
+    #main:after{
+        /*footerを下に回り込ませる*/
         /*clearfix*/
         content: "";
         display: block;
