@@ -50,7 +50,6 @@ footer{
     #main{
         max-width: 1024px;
         margin: auto;
-        margin-bottom: 0%;
     }
     section{
         width: calc(70% - 20px);
