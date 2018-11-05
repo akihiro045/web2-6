@@ -49,8 +49,8 @@ footer{
 @media screen and (min-width:1025px){
     #main{
         max-width: 1024px;
-        height: ;
         margin: auto;
+        margin-bottom: 0%;
     }
     section{
         width: calc(70% - 20px);
