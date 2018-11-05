@@ -29,7 +29,15 @@ footer{
     text-align: center
 }
 /*640px以下*/
-/* @media screen and ()
-{
-
-} */
+@media screen and (min-width:641px){
+    aside{
+        width: clac(50% - 20px);
+        float: left;
+    }
+    #side::after{
+        /*clearfix*/
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
